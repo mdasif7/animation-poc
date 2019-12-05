@@ -1,0 +1,180 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+div.container {
+  height: 240px;
+  border: 2px solid #ddd;
+  padding: 5px;
+  display: inline-block;
+}
+
+div.stone {
+  height: 20px;
+  width: 20px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  display: inline-block;
+  float: left;
+  margin-left: 5px;
+  /* box-shadow: 0 0 5px #333; */
+  color: white;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  background-color: #fa7878;
+  -webkit-animation: myfirst 10s infinite; /* Safari 4.0 - 8.0 */
+  -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+  animation: myfirst 10s infinite;
+  animation-direction: alternate;
+  transition: all 3s 1s;
+
+}
+
+div.stone:nth-child(1) {
+animation-delay: 1s;
+animation: myfirst1 46s infinite;
+transition-delay: 200s;
+transition-property: width;
+transition-duration: 5s;
+animation-iteration-count: 1;
+}
+
+@keyframes myfirst1 {
+  0%   {left: 0px; top: 0px;}
+  5%   {left: 0px; top: 200px;}
+  30% { left: 0px; top: 200px;}
+  35% { left: 0px; top: 0px;}
+  40% { left: 0px; top: 0px;}
+  100% { left: 0px; top: 0px;}
+  5% {transform: rotate(360deg);}
+  30% {transform: rotate(360deg);}
+  35% {transform: rotate(0deg);}
+  100%  {transform: rotate(0deg);}  
+}
+div.stone:nth-child(2) {
+animation-delay: 3s;
+animation: myfirst2 40s infinite;
+transition-delay: 200s;
+animation-iteration-count: 1;
+
+}@keyframes myfirst2 {
+    0%   {left: 0px; top: 0px;}
+    5%   {left: 0px; top: 0px;}
+    10%   {left: 0px; top: 200px;}
+    40%  {left: 0px; top: 200px;} 
+    45%  {left: 0px; top: 0px;}
+
+    50%  {left: 0px; top: 0px;}
+    100% { left: 0px; top: 0px;}
+    5% {transform: rotate(0deg);}
+    10% {transform: rotate(360deg);}
+    40% {transform: rotate(360deg);}
+    45% {transform: rotate(0deg);}
+
+  }
+
+div.stone:nth-child(3) {
+animation-delay: 5s;
+animation: myfirst3 40s infinite;
+transition-delay: 200s;
+animation-iteration-count: 1;
+}
+@keyframes myfirst3 {
+    0%   {left: 0px; top: 0px;}
+    10%   {left: 0px; top: 0px;}
+    15%  {left: 0px; top: 200px;}
+    45%  {left: 0px; top: 200px;}
+    50%  {left: 0px; top: 0px;}
+    100% { left: 0px; top: 0px;}
+    10% {transform: rotate(0deg);}
+    15% {transform: rotate(360deg);}
+    45% {transform: rotate(360deg);}
+    50% {transform: rotate(0deg);} 
+  }
+div.stone:nth-child(4) {
+animation-delay: 7s;
+animation: myfirst4 40s infinite;
+transition-delay: 200s;
+animation-iteration-count: 1;
+}
+
+@keyframes myfirst4 {
+  0%   {left: 0px; top: 0px;}
+  15%  {left: 0px; top: 0px;}
+  20%  {left: 0px; top: 200px;}
+  50%  {left: 0px; top: 200px;}
+  55%  {left: 0px; top: 0px;}
+  60%  {left: 0px; top: 0px;}
+  95% { left: 0px; top: 0px;}
+  100% { left: 0px; top: 0px;}
+  15% {transform: rotate(0deg);}
+  20% {transform: rotate(360deg);}
+  50% {transform: rotate(360deg);}
+  55% {transform: rotate(0deg);} 
+}
+
+
+div.stone:nth-child(5) {
+animation-delay: 9s;
+animation: myfirst5 36s infinite;
+transition-delay: 200s;
+animation-iteration-count: 1;
+}  
+@keyframes myfirst5 {
+    0%   {left: 0px; top: 0px;}
+    15%  {left: 0px; top: 0px;}
+    20%  {left: 0px; top: 0px;}
+    25%  {left: 0px; top: 200px;}
+    60%  {left: 0px; top: 200px;}
+    65%  {left: 0px; top: 0px;}
+    100% { left: 0px; top: 0px;} 
+    20% {transform: rotate(0deg);} 
+    25% {transform: rotate(360deg);}
+    30% {transform: rotate(360deg);}
+    60% {transform: rotate(360deg);}
+    65% {transform: rotate(0deg);}
+  }
+
+div.stone:nth-child(6) {
+animation-delay: 11s;
+animation: myfirst6 36s infinite;
+transition-delay: 200s;
+animation-iteration-count: 1;
+}
+@keyframes myfirst6 {
+    0%   {left: 0px; top: 0px;}
+    25%  {left: 0px; top: 0px;}
+    30%  {left: 0px; top: 200px;}
+    65%  {left: 0px; top: 200px;}
+    70%  {left: 0px; top: 0px;}
+    100% { left: 0px; top: 0px;}
+    25% {transform: rotate(0deg);}
+    30% {transform: rotate(360deg);}
+    65% {transform: rotate(360deg);}
+    70% {transform: rotate(0deg);}   
+  }
+div.stone:nth-child(7) {
+animation-delay: 13s;
+animation: myfirst7 36s infinite;
+transition-delay: 200s;
+animation-iteration-count: 1;
+}
+@keyframes myfirst7 {
+    0%   {left: 0px; top: 0px;}
+    30%  {left: 0px; top: 0px;}
+    35%  {left: 0px; top: 200px;}
+    70% { left: 0px; top: 200px;}
+    75% { left: 0px; top: 0px;}
+    100% { left: 0px; top: 0px;}
+    30% {transform: rotate(0deg);}
+    35% {transform: rotate(360deg);}
+    70% {transform: rotate(360deg);}
+    75% {transform: rotate(0deg);}
+   }
+div.stone:first-child {
+  margin-left: 0px;
+}
+
